@@ -1,0 +1,166 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: Tahoma, Verdana;
+    font-size: 14px;
+    line-height: 23px;
+    width: 100%;
+}
+a {
+    color: rgb(10, 120, 194);
+    outline: medium none;
+    text-decoration: underline;
+}
+a:hover {text-decoration: none;}
+p {margin: 10px 0;}
+h1 {
+    margin: 10px 0px;
+    font-size: 26px;
+}
+h2 {
+    margin: 10px 0px;
+    font-size: 24px;
+}
+h3 {
+    margin: 2px 0px 10px;
+    font-size: 22px;
+    font-weight: normal;
+}
+.floatR {float: right;}
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 25px auto 0;
+}
+.header {
+    margin: 0px auto 10px;
+    padding: 10px;
+    background: rgb(247,144,0);
+    background: -moz-linear-gradient(top, rgba(247,144,0,1) 0%, rgba(236,127,1,1) 52%, rgba(227,113,2,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(247,144,0,1) 0%,rgba(236,127,1,1) 52%,rgba(227,113,2,1) 100%);
+    background: linear-gradient(to bottom, rgba(247,144,0,1) 0%,rgba(236,127,1,1) 52%,rgba(227,113,2,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f79000', endColorstr='#e37102',GradientType=0 );
+    -webkit-box-shadow: 0px 4px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 3px -1px rgba(0,0,0,0.75);
+}
+.header h2 {display: inline-block;}
+.header a {float: right;}
+.box, .sidebar {
+    display: inline-block;
+    vertical-align: top;
+}
+.box {
+    display: inline-block;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    max-width: 625px;
+    padding: 0 10px;
+    margin-right: 5px;
+}
+.bloger {
+    float: left;
+    margin: 0 10px 0 0;
+}
+.blogImg, .product, .usrImgB {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.blogImg {
+    margin: 0 0 0 10px;
+    max-width: 280px;
+    float: right;
+}
+.blogPict {
+    width: 100%;
+    max-width: 570px;
+    margin: 0 auto;
+    display: block;
+}
+.product {max-width: 250px;}
+.product--bigger {max-width: 337px;}
+.sidebar {
+    max-width: 300px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.sidebarPosts, .sidebarBloggers {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+}
+.sidebarPostBox, .sidebarPostBox a {color: #489b1f;}
+.sidebarPostBox span {float: right;}
+.sidebarBloggers {margin: 10px 0;}
+.sidebar a {text-decoration: none;}
+.sidebarPostBoxNfo {color: #777;}
+.sidebarPostBoxNfo span {margin: 0 7px;}
+.sidebarPostBoxNfo span:first-child {
+    color: #bb225c;
+    margin: 0;
+}
+.sidebarPostBoxNfo span:last-child {text-decoration: underline;}
+.button {
+    background-color: #f00;
+    display: table;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 10px auto;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+}
+.button:hover {box-shadow: none;}
+.usrImgB {max-width: 450px;}
+
+
+@media screen and (max-width:960px) {
+    .sidebar {display: none;}
+    .box {
+        display: block;
+        max-width: inherit;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .hide640 {
+        display: none;
+    }
+}
+@media screen and (max-width:510px) {
+    .header {padding: 5px 0;}
+    .header h2 {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        margin: 0;
+    } 
+    .header a {display: none;}
+    .bloger {width: 95px;}
+    .blogImg {max-width: 150px;}
+}
+@media screen and (max-width:490px) {
+    h1 {font-size: 24px;}
+}
+@media screen and (max-width:450px) {
+    .floatR {float: none;}
+    .floatR img {max-width: 200px;}
+}
+@media screen and (max-width:404px) {
+    h1 {font-size: 18px;}
+}
+@media screen and (max-width:375px) {
+    .blogImg {
+        max-width: 280px;
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////*/
